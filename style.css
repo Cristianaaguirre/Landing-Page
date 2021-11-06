@@ -108,20 +108,11 @@ nav{
     z-index: -1;
 }
 
-.img-section {
-    flex-basis: 30%;
-    text-align: center;
-}
-
 .img-section img {
     width: 400px;
     height: 300px;
 }
 
-.text-section h1{
-    color: rgb(164, 81, 219);
-    font-size: 4em;
-}
 .text-section {
     font-size: 18px;
     text-align: center;
@@ -129,6 +120,11 @@ nav{
     flex-basis: 20%;
     color:#fff;
     margin: 0 100px;
+}
+
+.text-section h1{
+    color: rgb(164, 81, 219);
+    font-size: 4em;
 }
 
 .content{
@@ -141,7 +137,7 @@ nav{
 .content > * {
     margin-bottom: 30px;
 }
-
+/* ---------------------------------------------------------------- */
 /* Second Section */
 
 .section-cards {
@@ -166,13 +162,6 @@ nav{
     position: relative;
 }
 
-.wave{
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
 .card-item{
     text-align: center;
     position: relative;
@@ -180,7 +169,6 @@ nav{
     height: 400px;
     margin: 0 0.3rem;
     background-color: white;
-    box-shadow: 0 15px 60px rgba(0, 0, 0, .5);
 }
 
 .face {
@@ -339,13 +327,13 @@ nav{
     cursor: pointer;
 }
 
+/* ------------------------------------------------------------ */
 /* Footer */
 
 footer{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    z-index: 1000;
 }
 
 .container-footer {
@@ -358,7 +346,6 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 1100;
 }
 
 .social-media ul,
@@ -527,6 +514,8 @@ footer{
         display: block;
     }
 
+    /* ------------------------------------------------ */
+
     /* main-movil */
     .container-section {
         display: flex;
@@ -539,7 +528,13 @@ footer{
         height: 200px;
     }
 
+    /* ------------------------------------------------- */
     /* section cards */
+
+    .title-section {
+        font-size: 2em;
+        color: #fff;
+    }
 
     .container-cards {
         display: flex;
@@ -548,11 +543,6 @@ footer{
         gap: 30px;
         margin: 30px auto;
         padding: 0 50px;
-    }
-
-    .title-section {
-        font-size: 2em;
-        color: #fff;
     }
 
     .card-item {
@@ -571,9 +561,6 @@ footer{
         height: 400px;
     }
 
-    .left {
-        z-index: 1000;
-    }
 
     /* Contact */
 
