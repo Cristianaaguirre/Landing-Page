@@ -8,127 +8,179 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav class="nav-top">
-            <div>
-                <img src="./assets/img/carpi.png" class="logo" alt="">
+
+    <header class="hero">
+
+        <div class="nav__hero">
+
+            <div class="container nav__container">
+                
+                <h2 class="title__nav">CarpiGod</h2>
+
+                <ul class="nav__top">
+                    <li class="nav__items"><a href="#" class="links__items">Inicio</a></li>
+                    <li class="nav__items"><a href="#" class="links__items">Proyectos</a></li>
+                    <li class="nav__items"><a href="#" class="links__items">Sobre nosotros</a></li>
+                    <li class="nav__items"><a href="#" class="links__items"><span class="cta">Contacto</span></a></li>
+                </ul>
+                
             </div>
-            <input type="checkbox" id="check">
-            <label for="check" class="bar-btn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <ul class="nav-menu">
-                <li><a href="#casa">Inicio</a></li>
-                <li><a href="#">Carpinchos</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-            <img src="./assets/img/menu.png" alt="" class="logo-bar">
-        </nav>
+
+        </div>
+
+
+        <section class="hero__section">
+
+            <div class="container container__section">
+
+                <figure class="hero__section_logo">
+                    <img src="./assets/img/img-logo-2.png" class="img__logo_section" alt="logo animado de un carpincho">
+                </figure>
+
+                <div class="title__hero">
+                    <h1>CarpiGod</h1>
+                    <p>Como no amar a estos pequeños animales, en este blog te enseñaremos<span>todo lo que tienes que saber sobre ellos.</span></p>
+                </div>
+            </div>
+
+        </section>
+
     </header>
+
     <main>
-        <section class="section-home">
-            <div class="container-section">
-                <div class="img-section">
-                    <img src="./assets/img/img-logo-2.png" alt="">
-                </div>
-                <div class="text-section">
-                    <div class="content">
-                        <h1>CarpiGod</h1>
-                        <h3>¿Cómo no amarlos?</h3>
-                        <p>En este blog compartiremos todo lo relacionado a los carpichos simplemente porque los amamos</p>
-                    </div>
-                </div>
+
+        <section class="container">
+
+            <h2 class="title__projects">Nuestros proyectos</h2>
+
+            <div class="container__projects">
+
+                <figure class="project__picture picture-1">
+                    <img src="./assets/img/img-card-1.jpg" class="project__img">
+                </figure>
+                <figure class="project__picture picture-2">
+                    <img src="./assets/img/img-card-2.jpg" class="project__img">
+                </figure>
+                <figure class="project__picture picture-3">
+                    <img src="./assets/img/img-card-3.jpg" class="project__img">
+                </figure>
+                <figure class="project__picture picture-4">
+                    <img src="./assets/img/img-card-4.jpg" class="project__img">
+                </figure>
+                <figure class="project__picture picture-5">
+                    <img src="./assets/img/img-card-5.jpg" class="project__img">
+                </figure>
+                <figure class="project__picture picture-6">
+                    <img src="./assets/img/img-card-6.jpg" class="project__img">
+                </figure>
+
             </div>
+
         </section>
         
-        <section class="section-cards">
-            <h3 class="title-section">¿Sabías qué?</h3>
-            <div class="container-cards">
-                <div class="card-item">
-                    <div class="face face-1">
-                        <h3>Hola</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam doloremque neque repellendus architecto adipisci?</p>
-                    </div>
+        <section class="about__us">
+            <div class="container about__us--modifier">
 
-                    <div class="face face-2 img-card">
-                        <div class="img-test"></div>
+                <div class="card__about__us card-1">
+                    <picture>
+                        <img src="./assets/img/img-section-1.png" class="img__card">
+                    </picture>
+                    <div class="info__card">
+                        <p> <span>Aprende</span> sobre los carpinchos desde la comodidad de tu casa</p>
+                    </div>
+                </div>
+
+                <div class="card__about__us card-2">
+
+                    <picture>
+                        <img src="./assets/img/img-selfie.png" class="img__card">
+                    </picture>
+
+                    <div class="info__card">
+
+                        <p><span>Conoce</span> a miles de personas que <span>aman</span> a los carpinchos</p>
                     </div>
                     
                 </div>
 
-                <div class="card-item">
-                    <div class="face face-1">
-                        <h3>Hola</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam doloremque neque repellendus architecto adipisci?</p>
-                    </div>
-                    
-                    <div class="face face-2 img-card-2">
-                        <div class="img-test"></div>
-                    </div>
-                </div>
-
-                <div class="card-item">
-                    <div class="face face-1">
-                        <h3>Hola</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam doloremque neque repellendus architecto adipisci?</p>
-                    </div>
-
-                    <div class="face face-2 img-card-3">
-                        <div class="img-test"></div>
+                <div class="card__about__us card-3">
+                    <picture>
+                        <img src="./assets/img/img-app.png" class="img__card">
+                    </picture>
+                    <div class="info__card">
+                        <p><span>Descarga nuestra App</span> para estar atento a todas las novedades de nuestro sitio web</p>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <section class="contact">
-            <div class="title-contact">
-                <h3>Si estas interesado en nuestro contenido</h3>
-            </div>
-            <div class="container-form">
-                <div class="left">
-                    <img src="./assets/img/capi-png.png" alt="">
+        <section class="contact__section">
+            <div class="container container--modifier">
+                <div class="app__section">
+                    <h2 class="title__app"><span>¿</span>Qué estas esperando para unirte al mundo carpincho <span>?</span></h2>
+                    <p>Descarga ahora nuestra app</p>
+                    <div class="download__app">
+                        <div class="download__item">
+                            <a href="" class="link">
+                                <i class="fab fa-apple"></i>
+                                <h4 class="download__title">App Store</h4>
+                            </a>
+                        </div>
+                        <div class="download__item">
+                            <a href="" class="link">
+                                <i class="fab fa-google-play"></i>
+                                <h4 class="download__title">Play Store</h4>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="right">
-                    <h3>Contactanos</h3>
-                    <form>
-                        <input type="text" class="field" placeholder="Cristian Aguirre">
-                        <input type="number" class="field" placeholder="111-111-111">
-                        <input type="email" class="field" placeholder="emial@gmail.com">
-                        <textarea class="field" placeholder="Consulta"></textarea>
-                        <button class="btn">Enviar</button>
+
+                <div class="contact__suscription">
+                    <h3><span>¿</span>Tiénes dudas sobre el maravilloso mundo de CarpiGod<span>?</span> Escríbenos</h3>
+                    <form class="form__suscription">
+                        <input type="text" placeholder="Nombre" name="nombre">
+                        <input type="email" placeholder="Ingresa tu email" name="email">
                     </form>
+                    <textarea name="text-area" placeholder="¿Qué deseas saber?" class="text__area"></textarea>
+                    <input type="submit" value="Enviar">
                 </div>
             </div>
         </section>
+
     </main>
-    <footer>
-        <div class="container-footer">
-            <div class="waves">
-                <div class="wave" id="wave1"></div>
-                <div class="wave" id="wave2"></div>
-                <div class="wave" id="wave3"></div>
-                <div class="wave" id="wave4"></div>
+
+    <footer class="footer">
+
+        <div class="container container--footer">
+
+            <div class="footer__logo">
+                <img src="./assets/img/img-logo-2.png" alt="logo de un carpincho animado" class="img__footer_logo">
+                <h3>Carpi<span>God</span></h3>
             </div>
-            <div class="social-media">
+            
+            <div class="politics">
+                <ul>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+
+            <div class="social__media">
                 <ul>
                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-square fab--modifier"></i></a></li>
                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github fab--modifier"></i></a></li>
                 </ul>
             </div>
-            <div class="menu-footer">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Carpinchos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
+        
         </div>
+        
+        
     </footer>
-    
+
     <script src="https://kit.fontawesome.com/32f9c4f293.js" crossorigin="anonymous"></script>
 </body>
 </html>
