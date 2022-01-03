@@ -40,7 +40,8 @@ span {
     min-height: 100vh;
     background: #232526;
     background: -webkit-linear-gradient(to right, #414345, #232526);  
-    background: linear-gradient(to right, #414345, #232526); 
+    background: linear-gradient(to right, #414345, #232526);
+    position: relative; 
 }
 
 .nav__hero {
@@ -64,6 +65,10 @@ span {
 
 .nav__top {
     display: flex;
+}
+
+#check {
+    display: none;
 }
 
 .nav__items {
@@ -91,12 +96,16 @@ span {
     font-weight: 700;
 }
 
+.nav__icon{
+    display: none;
+}
+
 .links__items {
     font-size: 20px;
     color: #fff;
 }
 
-/* ---- */
+/* ---------------------------------- */
 
 .hero__section {
     width: 100%;
@@ -158,7 +167,13 @@ main {
 .title__projects {
     text-align: center;
     font-size: 2.5rem;
-    color: var(--black1);
+    color: var(--black2);
+}
+
+.title__projects_text {
+    margin-top: 1em;
+    font-size: 18px;
+    text-align: center;
 }
 
 .container__projects {
@@ -280,7 +295,7 @@ main {
 
 /*---------------------- Contact Section -----------------*/
 
-/* Appp Section */
+/* App Section */
 .container--modifier {
     padding: 2em 0;
     width: 80%;
@@ -375,6 +390,8 @@ main {
     font-weight: 600;
 }
 
+/* ------------------------------------------------------- */
+
 /* Footer */
 
 .footer {
@@ -451,19 +468,52 @@ main {
     }
     
     .title__nav {
-        font-size: 23px; 
+        font-size: 23px;
+        margin-left: 1em; 
     }
-    
+
+    .nav__top{
+        display: none;
+    }
+
+    #check {
+        display: none;
+    }
+
+    #check:checked ~ .nav__top {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+        height: 60vh;
+        width: 100%;
+        transition: .3s;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background-color: var(--black2);
+    }
+ 
     .nav__items {
-        margin: 0 .5rem;
+        margin: 2em 0;
     }
 
     .nav__items a {
-        font-size: 18px;
+        font-size: 19px;
     }
     
     .nav__items::before {
-        display: none;
+        display: block;
+    }
+
+    .nav__icon {
+        display: block;
+        cursor: pointer;
+        font-size: 1.7em;
+        color: #F4BD76;
+        margin-right: 1em;
     }
     
 
@@ -483,8 +533,9 @@ main {
 
  
     .img__logo_section {
-        width: 280px;
+        width: 95%;
         margin: 0 auto;
+        transform: translateX(1.6em);
     }
     
     .title__hero h1 {
@@ -507,7 +558,11 @@ main {
     .title__projects {
         text-align: center;
         font-size: 1.5rem;
-        color: var(--black1);
+        color: var(--black2);
+    }
+
+    .title__projects_text {
+        font-size: 16px;
     }
     
     .container__projects {
